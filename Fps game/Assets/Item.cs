@@ -11,6 +11,8 @@ public class Item : MonoBehaviour
     {
        this.transform.position = hand.transform.position;
        this.transform.parent = hand.transform;
+       this.transform.rotation =  hand.transform.rotation;
+       Debug.Log(this.transform.rotation);
 	}
    
         
