@@ -37,7 +37,9 @@ public class PickUp : MonoBehaviour
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out take, reach))
         {
             Debug.Log("gotit");
+            
             Item item = take.transform.GetComponent<Item>();// get the conponent = the transform of the ray when it hits sonthing            
+            
             item.MoveToHand();
             holding = true;
 		}
